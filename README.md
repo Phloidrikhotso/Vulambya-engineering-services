@@ -19,6 +19,45 @@ The website includes **Five main pages**
 - **Google Maps Embed** - Location display in contact page.
 
   -----
+## File Structure
+'''
+project-folder/
+│
+├── home.html
+├── about.html
+├── products.html
+├── news.html
+├── contact.html
+│
+├── images/
+│   ├── ves8.png   (Company logo)
+│   ├── ves1.jpg   (About Us image)
+│   ├── ves2.jpg   (Homepage banner)
+│   ├── ves4.jpg   (News page image)
+│   ├── ves6.jpg   (About Us project image)
+│   ├── ves7.jpg   (About Us team image)
+│   ├── ves10.jpg  (News page training image)
+│   └── other images as needed
+│
+└── README.md
+'''
+
+-----
+
+## How to Run the Website
+1. Download or clone the project folder.
+2. Open any of the '.html' files (for example, 'home.html') in a web browser.
+3. Navigate between pages using the **Menu bar** at the top of each page.
+
+---
+
+## Design Features
+- **Colour Scheme:** Skyblue(trust), while(precision).
+- **Typography:** Aptos for headings, Arial for body text.
+- **Layout:** Clean and professional with header, main content, and footer sections.
+- **Navigations:** Consistent menu across all pages for easy browsing.
+
+---
 
 ## Future Improvements
 - Add external CSS for more advanced styling and responsive design.
