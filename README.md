@@ -1,4 +1,4 @@
-# README file - Vulambya E$ngineering Services Website.
+# README file - Vulambya Engineering Services Website.
 
 ##  Project Overview
 
