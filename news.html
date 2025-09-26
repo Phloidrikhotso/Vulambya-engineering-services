@@ -1,45 +1,73 @@
 <!doctype html>
 <html>
 <head>
-<title>News & Updates</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News & Updates - Vulambya Engineering Services</title>
+<link rel="stylesheet" href="css/update1.css">
 </head>
-<body Style="background-color:white">
+<body>
     <!-- ================= HEADER SECTION ================= -->
-<header Style="background-color:skyblue">
-     <!-----=======Company name=====-->
-<h1>Vulambya Engineering Services</h1>
-<!----Navigation menu-->
-<nav>
-<div>
+<header>
+<nav class="navbar">
+<div class="company-logo">
     <!---==Company logo-->
-<img src="images/ves8.png" alt="Company logo" style="width:200px;height:200px;">
+<img src="images/ves8.png" alt="Company logo" class="logo-img">
 </div>
-<ul>
+
+<div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
+
        <!---====Navigation links to all pages===-->
-<li> <a href="home.html">Home page</a> </li>
-<li> <a href="about.html">About us</a> </li>
-<li> <a href="Products.html">Products and Services</a> </li>
-<li> <a href="news.html">News Updates</a> </li>
-<li> <a href="contact.html">Contact Us</a> </li>
-</ul>
+<div class="nav-links">
+<a href="home.html">Home</a>
+<a href="about.html">About us</a>
+<a href="products.html">Products and Services</a>
+<a href="news.html" class="active">News Updates</a> 
+<a href="contact.html">Contact Us</a>
+</div>
 </nav>
 </header>
+
 <!---MAIN CONTENT SECTION-->
 <main>
-<!----Section page-->
-<h2>Latest News and Updates</h2>
-<p>Stay informed about the latest developments, projects, and achievements at Vulambya Engineering Services.</p>
-<img src="images/ves4.jpg" styl="width:300px;height:350px;">
 
-<h3>Safety Training Workshop Completed</h3>
-<!---General image-->
-<img src="images/ves10.jpg" style="width:200px;height:200px;">
-<p><strong>Date:</strong> June 2025</p>
+<h1>Latest News and Updates</h1>
+<p>Stay informed about the latest developments, projects, and achievements at Vulambya Engineering Services.</p>
+<img src="images/ves4.jpg" alt="Workshop update" class="news-img">
+
+<div class="news-item">
+<!--Newsitem 1-->
+<h2>Safety Training Workshop Completed</h2>
+<img src="images/ves10.jpg" alt="Safety training session" class="news-small">
+<span class="date"><strong>Date:</strong> June 2025</span>
 <p>Our team successfully completed a specialized safety training program, reinforcing our commitment to maintaining the highest standards in workshop safety and complience.</p>
+</div>
+
+<div class="news-item">
+<!--News item 2-->
+<h2>Ammonia Pipe Repair for Cooler</h2>
+<img src="images/ves36.jpg" alt="Technicians repairing ammonia pipe" class="news-small">
+<span class="date"><strong>Date:</strong> July 2025</span>
+<p>Our technical team successfully repaired a critical ammonia pipe in the cooling system. This restored full efficiency and ensured safe, reliable operations for the client without business disruptions.</p>
+</div>
+
+<div class="news-item">
+<h2>Loading/Receiving Bay Repair at Woolworths Distribution Center</h2>
+<img src="images/ves37.jpg" alt="Technicians repairing loading bay at Woolworths Distribution Center" class="news-small">
+<span class="date"><strong>Date:</strong> August 2025</span>
+<p>We recently completed repair work on the loading and receiving bay at Woolworths Distribution Center in Centurion. The upgrades ensure smoother logistics, improved safety, and higher efficiency for daily operations.</p>
+</div>
+
 </main>
 <!----===FOOTER SECTION===--->
-<footer Style="background-color:skyblue">
-<p>&COPY;2025 Vulambya Engineering Services | All Rights Reserved.</p>
+<footer>
+<div class="footer-info">
+&COPY; 2025 Vulambya Engineering Services. All Rights Reserved.
+</div>
 </footer>
 </body>
 </html>

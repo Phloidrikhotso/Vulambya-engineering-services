@@ -1,59 +1,113 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Products and Services - Vulambya Engineering Services</title>
+<link rel="stylesheet" href="css/product1.css">
 </head>
-<body Style="background-color:white">
+<body>
     <!-- ================= HEADER SECTION ================= -->
-<header Style="background-color:skyblue">
-     <!-----=======Company name=====-->
-<h1>Vulambya Engineering Services</h1>
-<!----Navigation menu-->
-<nav>
-<div>
-    <!---==Company logo-->
-<img src="images/ves8.png" alt="Company logo" style="width:200px;height:200px;">
+<header>
+<nav class="navbar">
+<div class="company-logo">
+<img src="images/ves8.png" alt="Company logo" class="logo-img">
 </div>
-<ul>
-       <!---====Navigation links to all pages===-->
-<li> <a href="home.html">Home page</a> </li>
-<li> <a href="about.html">About us</a> </li>
-<li> <a href="products.html">Products and Services</a> </li>
-<li> <a href="news.html">News Updates</a> </li>
-<li> <a href="contact.html">Contact Us</a> </li>
-</ul>
+<div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+    <!---====Navigation links to all pages===-->
+<div class="nav-links">
+<a href="home.html">Home</a>
+<a href="about.html">About us</a>
+<a href="products.html" class="active">Products and Services</a> 
+<a href="news.html">News Updates</a>
+<a href="contact.html">Contact Us</a>
+</div>
 </nav>
 </header>
+
 <!-----=====MAIN CONTENT SECTION====-->
 <main>
-     <!---===Page heading===-->
 <h1>Our Products and Services</h1>
-<p>At Vulambya Engineering Services, we provide high-quality welding and custom fabrication solutions tailored to your needs. Our skilled team delivers durable and precise work for industrial, commercial, and domestic projects</p>
+<p>
+At <strong>Vulambya Engineering Services</strong>, we specialize in delivering <em>quality-driven welding and fabrication solutions</em>.  
+Our experienced team combines technical expertise, modern equipment, and strict safety practices to ensure every project exceeds expectations.  
+From small custom jobs to large-scale industrial contracts, we provide solutions that are reliable, durable, and built to last.
+</p>
+<img src="images/ves30.jpg" alr="Industrial welding workshop" class="intro-img">
+
 <!-----====sERVICES=====-->
-<h2>Services</h2>
+<h2>Our Core Services</h2>
+
+<div class="services-grid">
+<div class="service-item">
+<img src="images/ves31.jpg" alt="General Welding" class="product-img">
+<h3>General Welding & Fabrication</h3> 
+<p>Tailored to meet industrial, commercial, and domestic requirements.</p>
+</div>
+
+<div class="service-item">
+<img src="images/ves32.jpg" alt="Stainless Steel welding" class="product-img">
+<h3>Stainless Steel & Mild Steel Welding</h3>  
+<p>Precision welding for strength and durability in demanding environments.</p>
+</div>
+
+<div class="service-item">
+<img src="images/ves12.jpg" alt="pipe welding" class="product-img">
+<h3>Pipe Welding</h3> 
+<p>Specialized in ammonia, steam, and water piping systems with guaranteed compliance to safety standards.</p>
+</div>
+
+<div class="service-item">
+<img src="images/ves34.jpg" alt="Metal Cutting and Grinding" class="product-img">
+<h3>Metal Cutting & Grinding</h3>
+<p>Accurate shaping and finishing for clean, ready-to-use components.</p>
+</div>
+
+<div class="service-item">
+<h3>Custom Metal Structures<h3> 
+<p>Designed and fabricated to meet unique client needs and specifications.</p>
+</div>
+
+<div class="service-item">
+<h3>Maintenance & Repairs</h3> 
+<p>Extending the life of your equipment with fast, reliable servicing.</p>
+</div>
+</div>
+
+<!-----RODUCTS-->
+<h2>Products</h2>
 <ul>
-<li>General Welding & Fabrication</li>
-<li>Stainless Steel & Mild Steel Welding</li>
-<li>Pipe Welding(Ammonia, Steam, Water, etc.)</li>
-<li>Metal Cutting & Grinding</li>
-<li>Custom Metal Structures</li>
-<li>Maintenance & Repairs</li>
+<li><strong>Custom Metal Gates & Doors</strong> – Durable, secure, and tailored to both residential and industrial use.</li>
+<li><strong>Protective Railings & Balustrades</strong> – Safety-focused designs without compromising on style.</li>
+<li><strong>Industrial Tanks & Piping</strong> – Engineered for strength and long-term performance in harsh environments.</li>
+<li><strong>Fabricated Workbenches & Stands</strong> – Built to withstand heavy-duty applications.</li>
+<li><strong>Custom Steel Furniture</strong> – Functional, stylish, and made to fit your exact requirements.</li>
 </ul>
-<!-----pRODUCTS-->
-<h3>Products</h3>
-<ul>
-<li>Custom Metal Gates & Doors</li>
-<li>Protective Railings & Balustrades</li>
-<li>Industrial Tanks & Piping</li>
-<li>Fabricated Workbenches & Stands</li>
-<li>Custom Steel Furniture</li>
-</ul>
-<h4>Why Choose Us?</h4>
-<p>We combine experience, precision, and safety standards to deliver work that lasts. Whether you need custom designs or industrial-scale fabrication, we guarantee excellent results</p> 
+
+
+<h2>Why Choose Us?</h2>
+<div class="checklist">
+<p>
+✔ Skilled & certified team <br>
+✔ Cutting-edge equipment & techniques <br>
+✔ Commitment to safety & compliance <br>
+✔ Timely delivery and reliable support <br>
+✔ Competitive pricing without compromising quality
+</p>
+</div>
+
 </main>
+
 <!----===FOOTER SECTION===--->
-<footer Style="background-color:skyblue">
-<p>&COPY;2025 Vulambya Engineering Services | All Rights Reserved</p>
+<footer>
+<div class="footer-info">
+ &COPY;2025 Vulambya Engineering Services. All Rights Reserved.
+ </div>
 </footer>
 </body>
 </html>
