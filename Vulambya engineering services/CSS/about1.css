@@ -1,0 +1,193 @@
+/* ======= RESET ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    color: #333;
+}
+
+/* ======= HEADER ======= */
+header {
+    background-color: #87CEEB;
+    color: white;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 1000;
+}
+.navbar .company-logo img.logo-img {
+    width: 70px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+.nav-links a.active {
+    color: #004080;
+    font-weight: bold;
+    border-bottom: 2px solid #004080;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 28px;
+    background: white;
+    margin: 4px 0;
+    transition: 0.4s;
+    border-radius: 2px;
+}
+
+/* ======= RESPONSIVE NAVIGATION ======= */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #87CEEB;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 1rem 0;
+    }
+
+    .nav-links a {
+        padding: 1rem 0;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #444;
+        cursor: pointer;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* ======= MAIN CONTENT ======= */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+main h1,
+main h2 {
+    margin: 20px 0 10px;
+    font-size: 1.7rem;
+    text-align: center;
+    color: #004080;
+    font-weight: bold;
+}
+
+main p {
+    margin: 12px 0;
+    line-height: 1.8;
+    font-size: 1rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ======= LIST STYLING ======= */
+ul {
+    list-style: disc;
+    margin: 1rem auto;
+    padding-left: 40px;
+    max-width: 900px;
+    text-align: left;
+}
+
+ul li {
+    margin: 0.5rem 0;
+}
+
+/* ======= PAGE IMAGES ======= */
+.intro-img,
+.project-img {
+    max-width: 100%;
+    height: auto;
+    margin: 1.3rem auto;
+    display: block;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer {
+    background-color: #87CEEB; 
+    padding: 1.5rem 1rem; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    text-align: center; 
+}
+
+/* Footer info (copyright text) */
+.footer-info {
+    font-size: 0.9rem; 
+    color: #004080; 
+    margin: 0.5rem 0;
+}
+
+/* Date and time */
+.date-time {
+    font-size: 1rem; 
+    font-family: Arial, sans-serif; 
+    color: #004080; 
+    margin-top: 5px; 
+}
+
+/* ======= SCROLL ANIMATION ======= */
+main h1,
+main h2,
+main p,
+main img,
+main ul {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

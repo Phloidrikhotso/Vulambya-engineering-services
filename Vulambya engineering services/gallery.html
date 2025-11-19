@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore Vulambya Engineering Services gallery showcasing welding, fabrication, ammonia pipe repair, and engineering projects.">
+    <meta name="keywords" content="Vulambya Engineering gallery, welding projects, fabrication work, ammonia pipe repair, industrial engineering">
+    <meta name="author" content="Vulambya Engineering Services">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Vulambya Engineering Services</title>
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+<header>
+<nav class="navbar">
+<div class="company-logo">
+<img src="images/ves8.png" alt="Company logo" class="logo-img">
+</div>
+<div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<div class="nav-links">
+<a href="home.html">Home</a>
+<a href="about.html">About us</a>
+<a href="products.html">Services</a> 
+<a href="news.html">News Updates</a>
+<a href="gallery.html" class="active">Gallery</a>
+<a href="contact.html">Contact Us</a>
+</div>
+</nav>
+</header>
+
+<main>
+<h1>Our Project Gallery</h1>
+
+<div class="gallery-grid">
+    <div class="gallery-item">
+        <img src="images/ves4.jpg" alt="Workshop Update" onclick="openLightbox(this)">
+        <div class="caption">Workshop Update</div>
+    </div>
+    <div class="gallery-item">
+        <img src="images/ves10.jpg" alt="Safety Training" onclick="openLightbox(this)">
+        <div class="caption">Safety Training</div>
+    </div>
+    <div class="gallery-item">
+        <img src="images/ves36.jpg" alt="Ammonia Pipe Repair" onclick="openLightbox(this)">
+        <div class="caption">Ammonia Pipe Repair</div>
+    </div>
+  
+    
+</div>
+</main>
+
+<!-- Lightbox Structure -->
+<div id="lightbox" style="display:none;">
+    <div class="lightbox-content">
+        <span id="prev-arrow" class="arrow">&#10094;</span> 
+        <img id="lightbox-img" src="" alt="Image in lightbox">
+        <span id="next-arrow" class="arrow">&#10095;</span> 
+    </div>
+</div>
+
+<footer>
+    <div class="footer-info">
+        &COPY; 2025 Vulambya Engineering Services. All Rights Reserved. | <span class="date-time"></span>
+    </div>
+</footer>
+
+<script src="JavaScript/gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+/* ================== RESET ================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+}
+
+/* ================== HEADER & NAVBAR ================== */
+header {
+    background-color: #87CEEB;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
+    z-index: 1000;
+}
+
+.logo-img {
+    width: 70px;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+.nav-links a.active {
+    font-weight: bold;
+    color: #004080;
+    border-bottom: 2px solid #004080;
+}
+
+/* ================== HAMBURGER ================== */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background: white;
+    margin: 4px 0;
+    border-radius: 2px;
+}
+
+/* ================== MOBILE NAVIGATION ================== */
+@media (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #87CEEB;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 1rem 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 1rem 0;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #444;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* ================== MAIN CONTENT ================== */
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+main h1 {
+    text-align: center;
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+main p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.news-img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+}
+
+/* ================== NEWS ITEMS ================== */
+.news-item {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #f5f5f5;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.news-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.news-item h2 {
+    color: #004080;
+    margin-bottom: 0.6rem;
+}
+
+.news-small {
+    width: 100%;
+    margin: 0.8rem 0;
+    border-radius: 6px;
+}
+
+.date {
+    display: block;
+    margin-bottom: 0.8rem;
+    color: #444;
+}
+
+/* ================== READ MORE / FULL ARTICLE ================== */
+.full-article {
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    position: relative;
+}
+
+/* Preview: limit to 2 lines */
+.full-article.preview p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* show only 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0;
+}
+
+/* Read More styled at the end of second line */
+.full-article.preview .read-more {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: white; 
+    padding-left: 5px;
+    color: #004080; 
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Expanded: show full article */
+.full-article.expanded p {
+    display: block;
+    max-height: none;
+}
+
+.full-article.expanded .read-more {
+    position: static;
+    display: inline-block;
+    color: #00bcd4;
+    margin-top: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #87CEEB; 
+    padding: 1.5rem 1rem; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    text-align: center; 
+}
+
+/* Footer info (copyright text) */
+.footer-info {
+    font-size: 0.9rem; 
+    color: #004080; 
+    margin: 0.5rem 0;
+}
+
+/* Date and time */
+.date-time {
+    font-size: 1rem; 
+    font-family: Arial, sans-serif; 
+    color: #004080; 
+    margin-top: 5px; 
+}
+

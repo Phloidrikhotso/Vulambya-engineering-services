@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Vulambya Engineering Services</title>
+
+<!-- SEO -->
+<meta name="description" content="Contact Vulambya Engineering Services for welding, fabrication, ammonia pipe welding, industrial engineering services, and maintenance solutions.">
+<meta name="keywords" content="Vulambya Engineering Services contact, welding services, fabrication, ammonia pipe repair, engineering services, Modderfontein industrial welding">
+<meta name="author" content="Vulambya Engineering Services">
+<link rel="canonical" href="https://www.vulambyaengineering.co.za/contact.html">
+<link rel="stylesheet" href="css/contact1.css">
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <nav class="navbar">
+            <div class="company-logo">
+                <img src="images/ves8.png" alt="Company logo" class="logo-img">
+            </div>
+
+            <!-- Hamburger for mobile -->
+            <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Navigation links -->
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="products.html">Services</a>
+                <a href="news.html">News Updates</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html" class="active">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT SECTION -->
+    <main>
+        <h1>Contact Us</h1>
+        <p>Feel free to reach out to us regarding any enquiries, quotations, or service requests.</p>
+
+        <!-- Contact Information -->
+        <section class="contact-info reveal">
+            <h2>Our Contact Information</h2>
+            <p><strong>Address:</strong><br>
+                AW 10 - Industrial <br>
+                Modderfontein Industrial Site <br>
+                Ammonia Alley Modderfontein <br>
+                1645
+            </p>
+            <p><strong>Phone:</strong> +27 72 154 1128</p>
+            <p><strong>Email:</strong> phloidrikhotso@gmail.com</p>
+        </section>
+
+        <!-- Opening Hours -->
+        <section class="opening-hours reveal">
+            <h2>Opening Hours</h2>
+            <p><strong>Monday - Thursday:</strong> 08:00 AM - 15:00 PM</p>
+            <p><strong>Friday:</strong> 08:00 AM - 13:00 PM</p>
+            <p><strong>Saturday - Sunday:</strong> Closed</p>
+        </section>
+
+        <!-- Google Map -->
+        <section class="map reveal">
+            <h2>Find Us Here</h2>
+            <p>Our Location On The Map:</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d14333.533210951184!2d28.167426901708275!3d-26.086403634385874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e0!4m3!3m2!1d-26.093051!2d28.1670807!4m3!3m2!1d-26.0796378!2d28.189385899999998!5e0!3m2!1sen!2sie!4v1755864419309!5m2!1sen!2sie" loading="lazy" allowfullscreen></iframe>
+        </section>
+
+        <!-- Enquiry Form -->
+        <section class="contact-form reveal">
+    <h2>Send Us an Enquiry</h2>
+
+    <!-- Enquiry Form -->
+    <form id="enquiryForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Enquiry</button>
+    </form>
+</section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <div class="footer-info">
+            &COPY; 2025 Vulambya Engineering Services. All Rights Reserved. | <span class="date-time"></span> 
+
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    emailjs.init("I_X60cSAHL-ycMx7Y");  // Replace with your actual EmailJS user ID
+</script>
+    <script src="JavaScript/contact.js"></script>
+</body>
+</html>
