@@ -40,6 +40,13 @@ In **Part 2**, the following improvements and enhancements were made to the webs
   - Smooth user experience moving between sections.
 
 ---
+## Part 2 Improvements
+- Added HTML form
+- Added JavaScript 
+- Added Search Engine Optimization
+- Added EmailJS integration to handle form submission
+- Dynamic footer with the current time and year
+
 
 ## Technologies Used
 
@@ -47,6 +54,7 @@ In **Part 2**, the following improvements and enhancements were made to the webs
 - **CSS3 (External Stylesheets)** – Styling and responsiveness.  
 - **Images** – Company logo, service visuals, and news updates.  
 - **Google Maps Embed** – Location display on contact page.
+- **JavaScript**
 
 ---
 
