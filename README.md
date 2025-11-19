@@ -15,7 +15,7 @@ The website includes **five main pages**:
 
 ---
 
-## Part 2 – Improvements Added
+## Part 1 – Improvements Added
 
 In **Part 2**, the following improvements and enhancements were made to the website:
 
